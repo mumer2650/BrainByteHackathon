@@ -1,0 +1,32 @@
+# VS Code specific
+.vscode/
+
+# Compiled object files
+*.o
+
+# Compiled binary executables
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# Backup files
+*~
+*.bak
+
+# MacOS hidden files (if any team member uses Mac)
+.DS_Store
+
+# Windows hidden files
+Thumbs.db
+desktop.ini
+
+# CMake build directory (if using CMake)
+build/
+
+# Logs
+*.log
+
+#TXT
+*.txt
