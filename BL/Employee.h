@@ -22,9 +22,10 @@ public:
   ~Employee();
 
 public:
-  std::string getrole();
+  std::string getRole();
   int getEmployeeId();
-  std::string getpassword();
+  std::string getPassword();
+  std::string getEmail();
 
   void setName(std::string name);
   void setEmail(std::string email);
@@ -32,11 +33,11 @@ public:
   void setPassword(std::string password);
   void setRole(std::string role);
 
-  static void LoadAllEmployees();
-  static void SaveAllEmployees();
+  static bool LoadAllEmployees();
+  static bool SaveAllEmployees();
 
-  static void AddEmployee(Employee &employee);
-  static void DeleteEmployee(Employee &employee);
+  static bool AddEmployee(Employee &employee);
+  static bool DeleteEmployee(std::string &employee);
 
   static std::vector<Employee> GetAllEmployees();
 };

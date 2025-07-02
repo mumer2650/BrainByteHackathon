@@ -3,6 +3,6 @@
 class EmployeeDL
 {
 public:
-  static void LoadAllEmployeesFromFile();
-  static void SaveAllEmployeesToFile();
+  static bool LoadAllEmployeesFromFile();
+  static bool SaveAllEmployeesToFile();
 };

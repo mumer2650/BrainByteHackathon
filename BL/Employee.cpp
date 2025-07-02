@@ -1,5 +1,5 @@
 #include "Employee.h"
-
+#include "../DL/EmployeeDL.h"
 Employee::Employee()
 {
   EmployeeId = -1;
@@ -25,7 +25,7 @@ Employee::Employee(int EmployeeId, std::string name, std::string email, std::str
 }
 
 // Getters probably or bnane per jaeyn gy dekhoon ga
-std::string Employee::getrole()
+std::string Employee::getRole()
 {
   return role;
 }
@@ -33,9 +33,13 @@ int Employee::getEmployeeId()
 {
   return EmployeeId;
 }
-std::string Employee::getpassword()
+std::string Employee::getPassword()
 {
   return password;
+}
+std::string Employee::getEmail()
+{
+  return email;
 }
 
 // These are setters shayed kam krne paren
@@ -61,18 +65,53 @@ void Employee::setRole(std::string role)
 }
 
 // Other functionalities
-void Employee::LoadAllEmployees()
+bool Employee::LoadAllEmployees()
 {
+  EmployeeDL::LoadAllEmployeesFromFile();
 }
-void Employee::SaveAllEmployees()
+bool Employee::SaveAllEmployees()
 {
+  EmployeeDL::SaveAllEmployeesToFile();
 }
-void Employee::AddEmployee(Employee &employee)
+
+bool Employee::AddEmployee(Employee &employee)
 {
+  for (Employee e : employees)
+  {
+    if (e.getEmail() == employee.getEmail())
+    {
+      return false;
+    }
+  }
+  employees.push_back(employee);
+  SaveAllEmployees();
+  return true;
 }
-void Employee::DeleteEmployee(Employee &employee)
+
+bool Employee::DeleteEmployee(std::string &email)
 {
+  // for (Employee e : employees)
+  // {
+  //   if (e.getEmail() == email)  wont work as .erase needs an iterator
+  //   {
+  //     employees.erase(e);
+  //     return true;
+  //   }
+  // }
+
+  for (auto it = employees.begin(); it != employees.end(); ++it)
+  {
+    if (it->getEmail() == email)
+    {
+      employees.erase(it);
+      SaveAllEmployees();
+      return true;
+    }
+  }
+  return false;
 }
-std::vector<Employee> GetAllEmployees()
+
+std::vector<Employee> Employee::GetAllEmployees()
 {
+  return employees;
 }
