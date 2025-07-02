@@ -45,6 +45,10 @@ std::string Employee::getEmail()
 // These are setters shayed kam krne paren
 void Employee::setName(std::string name)
 {
+  if (name.empty())
+  {
+    throw std::invalid_argument("Email cannot be empty.");
+  }
   this->name = name;
 }
 void Employee::setEmail(std::string email)
