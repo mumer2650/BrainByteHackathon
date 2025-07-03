@@ -68,4 +68,33 @@ bool MenuDL::addRequestedItemInMenu(int id, const std::string& name, double pric
     menuFile << "," << category << std::endl;
     menuFile << "," << quantity << std::endl;
     menuFile.close();
-}   
+}
+
+std::vector<Menu> MenuDL::loadMenuFromFile()
+{
+    std::ifstream file("menu.txt");
+    std::vector<Menu> menuList;
+    if (!file.is_open())
+        return menuList;
+
+    std::string line;
+    while (getline(file, line)) {
+        std::stringstream ss(line);
+        std::string idStr, name, priceStr, category, qtyStr;
+
+        getline(ss, idStr, ',');
+        getline(ss, name, ',');
+        getline(ss, priceStr, ',');
+        getline(ss, category, ',');
+        getline(ss, qtyStr, ',');
+
+        int id = std::stoi(idStr);
+        double price = std::stod(priceStr);
+        int quantity = std::stoi(qtyStr);
+
+        Menu item(id, name, price, category, quantity);
+        menuList.push_back(item);
+    }
+    file.close();
+    return menuList;
+}
