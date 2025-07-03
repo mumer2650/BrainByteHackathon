@@ -43,4 +43,6 @@ public:
 	static bool DeleteEmployee(std::string& employee);
 
 	static std::vector<Employee> GetAllEmployees();
+
+	static void AddLoadedEmployee(const Employee& emp);
 };
