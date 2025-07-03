@@ -127,28 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\BrainByteHackathon\BL\menu.cpp" />
-    <ClCompile Include="..\..\BrainByteHackathon\BL\recipe.cpp" />
-    <ClCompile Include="..\..\BrainByteHackathon\BL\request.cpp" />
-    <ClCompile Include="..\..\BrainByteHackathon\DL\menu_file_handler.cpp" />
-    <ClCompile Include="..\..\BrainByteHackathon\DL\recipe_file_handler.cpp" />
-    <ClCompile Include="..\..\BrainByteHackathon\DL\request_file_handler.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Recipe.cpp" />
+    <ClCompile Include="Requests.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\BrainByteHackathon\BL\menu.h" />
-    <ClInclude Include="..\..\BrainByteHackathon\BL\recipe.h" />
-    <ClInclude Include="..\..\BrainByteHackathon\BL\request.h" />
-    <ClInclude Include="..\..\BrainByteHackathon\DL\menu_file_handler.h" />
-    <ClInclude Include="..\..\BrainByteHackathon\DL\recipe_file_handler.h" />
-    <ClInclude Include="..\..\BrainByteHackathon\DL\request_file_handler.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\..\BrainByteHackathon\crediantials.txt" />
-    <Text Include="..\..\BrainByteHackathon\menu.txt" />
-    <Text Include="..\..\BrainByteHackathon\recipes.txt" />
-    <Text Include="..\..\BrainByteHackathon\requests.txt" />
-    <Text Include="..\..\BrainByteHackathon\sales.txt" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Recipe.h" />
+    <ClInclude Include="Requests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
