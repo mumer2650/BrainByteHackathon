@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hackathon", "Hackathon.vcxproj", "{14140B48-1C41-47E1-9A0A-CA6106385BAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14140B48-1C41-47E1-9A0A-CA6106385BAB}.Debug|x64.ActiveCfg = Debug|x64
+		{14140B48-1C41-47E1-9A0A-CA6106385BAB}.Debug|x64.Build.0 = Debug|x64
+		{14140B48-1C41-47E1-9A0A-CA6106385BAB}.Debug|x86.ActiveCfg = Debug|Win32
+		{14140B48-1C41-47E1-9A0A-CA6106385BAB}.Debug|x86.Build.0 = Debug|Win32
+		{14140B48-1C41-47E1-9A0A-CA6106385BAB}.Release|x64.ActiveCfg = Release|x64
+		{14140B48-1C41-47E1-9A0A-CA6106385BAB}.Release|x64.Build.0 = Release|x64
+		{14140B48-1C41-47E1-9A0A-CA6106385BAB}.Release|x86.ActiveCfg = Release|Win32
+		{14140B48-1C41-47E1-9A0A-CA6106385BAB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5B92CB2-5645-4BFB-AFA2-290EBCC86ADE}
+	EndGlobalSection
+EndGlobal
