@@ -36,6 +36,15 @@
     <ClCompile Include="Requests.cpp">
       <Filter>Source Files\BL</Filter>
     </ClCompile>
+    <ClCompile Include="MenuDL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestDL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RecipeDL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.h">
@@ -47,5 +56,18 @@
     <ClInclude Include="Requests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MenuDL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestDL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecipeDL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="requests.txt" />
+    <Text Include="recipes.txt" />
   </ItemGroup>
 </Project>
