@@ -13,19 +13,28 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\BL">
+      <UniqueIdentifier>{c9e7ac47-d12a-47f2-bf7f-20b1f34efc1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DL">
+      <UniqueIdentifier>{44388109-9cb9-4336-a4f6-331ffbb666ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{77db3d32-3de9-430b-b84c-c1fd8f4629b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Menu.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\BL</Filter>
     </ClCompile>
     <ClCompile Include="Recipe.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\BL</Filter>
     </ClCompile>
     <ClCompile Include="Requests.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\BL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
