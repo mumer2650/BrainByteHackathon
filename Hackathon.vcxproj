@@ -129,13 +129,23 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuDL.cpp" />
     <ClCompile Include="Recipe.cpp" />
+    <ClCompile Include="RecipeDL.cpp" />
+    <ClCompile Include="RequestDL.cpp" />
     <ClCompile Include="Requests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuDL.h" />
     <ClInclude Include="Recipe.h" />
+    <ClInclude Include="RecipeDL.h" />
+    <ClInclude Include="RequestDL.h" />
     <ClInclude Include="Requests.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="recipes.txt" />
+    <Text Include="requests.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

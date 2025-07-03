@@ -20,15 +20,15 @@ public:
     }
 
     // Getters
-    int getId() const { return id; }
-    std::string getName() const { return name; }
-    double getPrice() const { return price; }
-    std::string getCategory() const { return category; }
-    int getQuantity() const { return quantity; }
+    int getId() const;
+    std::string getName() const ;
+    double getPrice() const;
+    std::string getCategory() const;
+    int getQuantity() const;
 
     // Setters
-    void setName(const std::string& n) { name = n; }
-    void setPrice(double p) { price = p; }
-    void setCategory(const std::string& c) { category = c; }
-    void setQuantity(int q) { quantity = q; }
+    void setName(const std::string& n);
+    void setPrice(double p);
+    void setCategory(const std::string& c);
+    void setQuantity(int q);
 };
